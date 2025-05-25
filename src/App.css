@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inknut Antiqua', 'Days One';
+    background-color: #00193C;
+    align-content: center;
+}
+
+.topContent {
+    font-family: 'Days One';
+    font-weight: 400px;
+}
+
+.isi-content p {
+    font-family: 'Days One';
+    font-weight: 400px;
+}
+
+.wrapper {
+    margin: auto;
+    position: relative;
+  }
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+      width: 90%;
+    }
+}

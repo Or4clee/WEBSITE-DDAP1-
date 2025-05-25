@@ -1,0 +1,215 @@
+.content-title h1{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+.topContent {
+    padding: 100px;
+    background: url('D:\ReactJS\novatech-project\src\assets\84396 1.png');
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-size: 100%, 400px;
+}
+
+
+.isi-content p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Day Ones';
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px ;
+    z-index: -1;
+}
+
+.components-box {
+    background-color: white;
+    color: #00193C;
+    border-top-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 1220px;
+    margin: 0 auto 3rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+    z-index: 10;
+    
+  }
+  .components-box h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Days One';
+  }
+  .components-box ol {
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 1rem;
+  }
+  .components-box ol li {
+    margin-bottom: 0.5rem;
+    font-weight: 100px;
+    font-size: 20px;
+  }
+  .components-box ol li span {
+    font-weight: 700;
+    font-weight: 100px;
+    font-size: 25px;
+  }
+
+  /* Two column sections */
+  .two-column {
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10rem;
+  }
+  .two-column > div {
+    max-width: 400px;
+  }
+  .two-column img {
+    border-radius: 0.5rem;
+    width: 567px;
+    height: 360px;
+    object-fit: cover;
+    
+  }
+  .two-column .text-content h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-size: 30px;
+    margin-bottom: 0.75rem;
+    color: white;
+  }
+  .two-column .text-content ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+    margin: 0;
+    color: white;
+  }
+  .two-column .text-content ul li {
+    margin-bottom: 0.25rem;
+  }
+  @media (min-width: 768px) {
+    .two-column {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .two-column > div {
+      max-width: 48%;
+    }
+  }
+  /* Reversed two-column for last section */
+  .two-column-reverse{
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10rem;
+  }
+
+  .two-column-reverse > div {
+    max-width: 400px;
+  }
+
+  .two-column-reverse img {
+    border-radius: 0.5rem;
+    width: 567px;
+    height: 360px;
+    object-fit: cover;
+  }
+  .two-column-reverse .text-content-reverse h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-size: 30px;
+    margin-bottom: 0.75rem;
+    color: white;
+  }
+  .two-column-reverse .text-content-reverse ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+    margin: 0;
+    color: white;
+  }
+  .two-column-reverse .text-content-reverse ul li {
+    margin-bottom: 0.25rem;
+  }
+  @media (min-width: 768px) {
+    .two-column-reverse {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .two-column-reverse > div {
+      max-width: 48%;
+    }
+  }
+  /* White info box for future section */
+  .future-box {
+    background-color: white;
+    color: #0b1a3a;
+    max-width: 768px;
+    margin: 0 auto 4rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .future-box h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .future-box p {
+    font-size: 0.875rem;
+    margin: 0 auto;
+    max-width: 36rem;
+    line-height: 1.6;
+  }
+  @media (min-width: 768px) {
+    .future-box p {
+      font-size: 1rem;
+    }
+  }
+  /* Footer */
+  footer {
+    background-color: #0b1a3a;
+    color: white;
+    font-size: 0.75rem;
+    padding: 1rem 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    
+  }
+  footer p {
+    flex: 1 1 150px;
+    margin: 0;
+    text-decoration: none ;
+  }
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1 1 250px;
+    justify-content: center;
+    text-decoration: none ;
+  }
+  @media (min-width: 768px) {
+    footer nav {
+      justify-content: flex-end;
+    }
+    footer {
+      font-size: 0.875rem;
+    }
+  }
