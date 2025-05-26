@@ -1,10 +1,10 @@
+
 .header {
   background-color: #00193C;
-  position: relative;
-  position: sticky;
-  position: -webkit-sticky;
   width: 100%;
   padding: 10px 10%;
+  position: sticky; top: 0;
+  position: -webkit-sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,4 +44,11 @@
 
 .menu a:hover::before{
   width: 100%;
+}
+
+@media (max-width: 768px){
+  .menu{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

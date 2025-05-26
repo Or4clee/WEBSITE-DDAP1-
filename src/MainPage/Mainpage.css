@@ -1,0 +1,310 @@
+/* Main container */
+main {
+    max-width: 3240px;
+    min-height: 400vh;
+    background-image: url('D:\ReactJS\novatech-project\src\assets\background.png') ;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    position: sticky;
+  }
+  /* Hero section */
+  .hero {
+    background-color:rgba(5, 24, 68, 0.426);
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5rem;
+    padding: 100px 50px 100px 50px;
+    max-width: 3240px;
+    max-height: 100%;
+    margin: auto 0;
+  }
+  .hero-text {
+    padding: 30px 10px auto a;
+    max-width: 500px;
+    max-height: 500px;
+    flex: 1 1 300px;
+    color: white;
+  }
+  .hero-text h1 {
+    font-family: 'Days One';
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1.1;
+    margin: 0 0 1rem 0;
+    user-select: none;
+  }
+
+  .hero-text p {
+    font-size: 0.875rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    max-width: 320px;
+  }
+  .hero-text button {
+    background-color: #22d3ee; /* cyan-400 */
+    color: #071a37;
+    font-weight: 400;
+    border: none;
+    border-radius: 9999px;
+    padding-left: 20px;
+    padding-right: 20px;;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Inknut Antiqua';
+  }
+  .hero-text button:hover {
+    background-color: #67e8f9; /* lighter cyan */
+  }
+  .hero-image {
+    background-image: url('D:\ReactJS\novatech-project\src\assets\solar panels.png');
+    background-position: center;
+    width: 587px;
+    height: 727px;
+    border-radius: 0.5rem;
+    margin-top: -100px;
+  }
+  /* Trending Topic */
+  .trending {
+    margin-top: 4rem;
+    font-family: 'Inknut Antiqua';
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    user-select: none;
+  }
+  /* Grid for trending items */
+  .trending-grid {
+    margin-top: 2.5rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    padding: 0 1rem;
+  }
+
+  .trending-grid h3{
+    color: white;
+    text-align: center;
+  }
+  .trending-item {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+    height: 30vh;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    transition: transform 0.2s ease;
+  }
+  .trending-item:hover {
+    transform: translateY(-4px);
+  }
+  .trending-item img {
+    width: 100%;
+    height: 9rem;
+    height: 20vh;
+    object-fit: cover;
+    display: block;
+  }
+  .trending-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 700;
+    color: #071a37;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .trending-info span {
+    white-space: pre-line;
+  }
+  .trending-info .arrow {
+    color: #22d3ee;
+    font-size: 3rem;
+  }
+
+  .trendingtopic-footer h3{
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+  }
+
+  .LowonganPekerjaan{
+      background-color: white;
+      color: #051f44;
+      border-bottom: 2px solid #051f44;
+      text-align: center;
+      padding: 24px 0;
+      margin-top: 3cm;
+  }
+
+  .LowonganPekerjaan h1 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-decoration: underline;
+      text-decoration-color: #051f44;
+      text-decoration-thickness: 2px;
+      margin: 0;
+  }
+ 
+  .LowonganPekerjaan p {
+     margin-top: 8px;
+     font-size: 0.875rem;
+     font-weight: 400;
+  }
+
+  /* Career cards container */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    padding: 64px 24px;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: white;
+    color: #051f44;
+    width: 240px;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 0.75rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .card-content {
+    padding: 16px;
+  }
+  .card-content h2 {
+    font-weight: 800;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+  }
+  .card-content p {
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Days One';
+  }
+
+   /* Image with overlay text */
+   .image-section {
+    margin-top:100px ;
+    position: relative;
+    width: 1920px;
+    height: 560px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url('D:\ReactJS\novatech-project\src\assets\citynight.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .overlay-text {
+    position: absolute;
+    left: 150px;
+    background-color: rgba(5, 24, 68, 0.426);
+    margin-top: 200px;
+    align-content: center;
+    padding: 50px 130px 50px 60px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    white-space: pre-line;
+    letter-spacing: 0.03em;
+    align-content: center;
+    color: white;
+  }
+
+  /* About us section */
+  .about {
+    margin-left: 30px;
+    padding: 48px 24px 48px 24px;
+    color: white;
+  }
+  .about h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 16px;
+    font-family: 'Inknut Antiqua';
+  }
+  .about p {
+    font-size: 0.75rem;
+    max-width: 1440px;
+    margin: 0;
+  }
+  
+
+   /* Trusted news portal section */
+   .trusted {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+    
+    /* Footer */
+  footer .footer-left {
+    flex: 1 1 150px;
+  }
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-end;
+    flex: 2 1 300px;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .hero-text {
+      max-width: 100%;
+      text-align: center;
+    }
+    .hero-text p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .trending-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 48px 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 320px;
+      }
+      .overlay-text {
+        left: 16px;
+        max-width: 280px;
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
+}
+
+  

@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '../Component/Navbar';
 
-import './Homepage.css'
+import './ContentPage.css'
 
-function HomePage() {
+function ContentPage() {
   return (
     <>
       <Navbar />
@@ -91,10 +91,10 @@ function HomePage() {
           <a href="#">Terms of use</a>
           <a href="#">Digital ID</a>
         </nav>
-        </footer>
-        </div>
-        </>
+      </footer>
+      </div>
+      </>
   )
 }
 
-export default HomePage;
+export default ContentPage;

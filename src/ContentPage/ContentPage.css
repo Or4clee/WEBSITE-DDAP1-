@@ -155,17 +155,18 @@
   /* White info box for future section */
   .future-box {
     background-color: white;
-    color: #0b1a3a;
-    max-width: 768px;
+    color: #00193C;
+    max-width: auto;
     margin: 0 auto 4rem;
     padding: 2.5rem 1.5rem;
-    border-radius: 1rem;
     text-align: center;
+    padding: auto;
   }
   .future-box h3 {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 30px;
     margin-bottom: 1rem;
+    font-family: 'Days One';
   }
   .future-box p {
     font-size: 0.875rem;
@@ -180,7 +181,7 @@
   }
   /* Footer */
   footer {
-    background-color: #0b1a3a;
+    background-color: #00193C;
     color: white;
     font-size: 0.75rem;
     padding: 1rem 1.5rem;
@@ -204,6 +205,7 @@
     flex: 1 1 250px;
     justify-content: center;
     text-decoration: none ;
+    color: white;
   }
   @media (min-width: 768px) {
     footer nav {
