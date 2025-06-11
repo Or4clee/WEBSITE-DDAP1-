@@ -1,217 +1,272 @@
-.content-title h1{
-    text-align: center;
-    color: white;
-    font-size: 70px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
 .topContent {
-    padding: 100px;
-    background: url('D:\ReactJS\novatech-project\src\assets\84396 1.png');
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-size: 100%, 400px;
+  padding: 200px 20px;
+  background: url("https://i.imghippo.com/files/eob1160FA.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Menggunakan 'cover' untuk menutupi seluruh area */
+  text-align: center;
 }
 
-
-.isi-content p{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-family: 'Day Ones';
-    padding-top: 40px;
-    padding-left: 200px;
-    padding-right: 200px ;
-    z-index: -1;
+.content-title h1 {
+  font-size: 3rem;
+  color: white;
 }
 
+.isi-content p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Day Ones";
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Components Box Styles */
 .components-box {
-    background-color: white;
-    color: #00193C;
-    border-top-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width: 1220px;
-    margin: 0 auto 3rem;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-    z-index: 10;
-    
-  }
-  .components-box h3 {
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-family: 'Days One';
-  }
-  .components-box ol {
-    font-weight: 600;
-    font-size: 30px;
-    margin-left: 1rem;
-  }
-  .components-box ol li {
-    margin-bottom: 0.5rem;
-    font-weight: 100px;
-    font-size: 20px;
-  }
-  .components-box ol li span {
-    font-weight: 700;
-    font-weight: 100px;
-    font-size: 25px;
-  }
+  background-color: white;
+  color: #00193c;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  /* Two column sections */
-  .two-column {
-    margin: 0 auto 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 10rem;
-  }
-  .two-column > div {
-    max-width: 400px;
-  }
-  .two-column img {
-    border-radius: 0.5rem;
-    width: 567px;
-    height: 360px;
-    object-fit: cover;
-    
-  }
-  .two-column .text-content h3 {
-    font-weight: 700;
-    font-size: 1.25rem;
-    font-size: 30px;
-    margin-bottom: 0.75rem;
-    color: white;
-  }
-  .two-column .text-content ul {
-    list-style: disc;
-    padding-left: 1.25rem;
-    font-size: 0.875rem;
-    margin: 0;
-    color: white;
-  }
-  .two-column .text-content ul li {
-    margin-bottom: 0.25rem;
-  }
-  @media (min-width: 768px) {
-    .two-column {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .two-column > div {
-      max-width: 48%;
-    }
-  }
-  /* Reversed two-column for last section */
-  .two-column-reverse{
-    margin: 0 auto 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 10rem;
-  }
+.components-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Days One";
+  text-align: center;
+}
 
-  .two-column-reverse > div {
-    max-width: 400px;
-  }
+.components-box ol {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  list-style-position: inside;
+}
 
-  .two-column-reverse img {
-    border-radius: 0.5rem;
-    width: 567px;
-    height: 360px;
-    object-fit: cover;
-  }
-  .two-column-reverse .text-content-reverse h3 {
-    font-weight: 700;
-    font-size: 1.25rem;
-    font-size: 30px;
-    margin-bottom: 0.75rem;
-    color: white;
-  }
-  .two-column-reverse .text-content-reverse ul {
-    list-style: disc;
-    padding-left: 1.25rem;
-    font-size: 0.875rem;
-    margin: 0;
-    color: white;
-  }
-  .two-column-reverse .text-content-reverse ul li {
-    margin-bottom: 0.25rem;
-  }
-  @media (min-width: 768px) {
-    .two-column-reverse {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .two-column-reverse > div {
-      max-width: 48%;
-    }
-  }
-  /* White info box for future section */
-  .future-box {
-    background-color: white;
-    color: #00193C;
-    max-width: auto;
-    margin: 0 auto 4rem;
-    padding: 2.5rem 1.5rem;
-    text-align: center;
-    padding: auto;
-  }
-  .future-box h3 {
-    font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 1rem;
-    font-family: 'Days One';
-  }
-  .future-box p {
-    font-size: 0.875rem;
-    margin: 0 auto;
-    max-width: 36rem;
-    line-height: 1.6;
-  }
-  @media (min-width: 768px) {
-    .future-box p {
-      font-size: 1rem;
-    }
-  }
-  /* Footer */
-  footer {
-    background-color: #00193C;
-    color: white;
-    font-size: 0.75rem;
-    padding: 1rem 1.5rem;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+.components-box ol li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.components-box ol li span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Two Column Sections */
+.two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.two-column > div {
+  width: 100%;
+}
+
+.two-column img {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.two-column .text-content h3,
+.two-column-reverse .text-content-reverse h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: white;
+  position: center;
+  text-align: center;
+}
+
+.two-column .text-content ul,
+.two-column-reverse .text-content-reverse ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  margin: 0;
+
+  color: white;
+}
+
+.two-column .text-content ul li,
+.two-column-reverse .text-content-reverse ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* Reversed Two Column */
+.two-column-reverse {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.two-column-reverse > div {
+  width: 100%;
+}
+
+.two-column-reverse img {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* Future Box Styles */
+.future-box {
+  background-color: white;
+  color: #00193c;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.future-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Days One", sans-serif;
+}
+
+.future-box p {
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 36rem;
+  line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #00193c;
+  color: white;
+  font-size: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .two-column,
+  .two-column-reverse {
+    flex-direction: row;
     justify-content: space-between;
-    gap: 0.5rem;
-    
+    align-items: center;
   }
-  footer p {
-    flex: 1 1 150px;
-    margin: 0;
-    text-decoration: none ;
+
+  .two-column > div,
+  .two-column-reverse > div {
+    width: 48%;
   }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    flex: 1 1 250px;
-    justify-content: center;
-    text-decoration: none ;
-    color: white;
+    justify-content: flex-end;
   }
-  @media (min-width: 768px) {
-    footer nav {
-      justify-content: flex-end;
-    }
-    footer {
-      font-size: 0.875rem;
-    }
+}
+
+@media (min-width: 992px) {
+  .content-title h1 {
+    font-size: 4rem;
   }
+
+  .isi-content p {
+    font-size: 1.5rem;
+  }
+
+  .components-box {
+    padding: 30px;
+  }
+
+  .components-box h3 {
+    font-size: 2.5rem;
+  }
+
+  .components-box ol {
+    font-size: 1.75rem;
+  }
+
+  .components-box ol li {
+    font-size: 1.2rem;
+  }
+
+  .components-box ol li span {
+    font-size: 1.4rem;
+  }
+
+  .two-column .text-content h3,
+  .two-column-reverse .text-content-reverse h3 {
+    font-size: 1.75rem;
+  }
+
+  .two-column .text-content ul,
+  .two-column-reverse .text-content-reverse ul {
+    font-size: 1.1rem;
+  }
+
+  .future-box h3 {
+    font-size: 2rem;
+  }
+
+  .future-box p {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
+}

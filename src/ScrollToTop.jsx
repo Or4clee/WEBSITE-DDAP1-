@@ -8,7 +8,6 @@ function ScrollToTop() {
   useEffect(() => {
     window.scrollTo(0, 0); // Mengatur scroll ke posisi atas
   }, [location]);
-
   return null; // Tidak merender apapun, hanya untuk menangani scroll
 }
 
